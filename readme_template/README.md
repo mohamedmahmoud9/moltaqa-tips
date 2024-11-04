@@ -16,15 +16,15 @@
 
 ## Links for development :
 
-1. [POSTMAN]([### URL])
+1. [POSTMAN](https://moltaqa.net/)
 
-2. [UI]([FIGMA or XD URL])
+2. [UI](https://moltaqa.net/)
 
 3. [Test_file]()
 
 ## Dashboard :
 
-1. [Link](###)
+1. [Link](https://moltaqa.net/)
 2. dashboard account :
    - email : example@example.com
    - password : 123456
@@ -37,8 +37,8 @@
 
 ## Links for project :
 
-1. [App in app store]()
-2. [App in google play]()
+1. [App in app store](https://moltaqa.net/)
+2. [App in google play](https://moltaqa.net/)
 
 ## Google Key Data :
 
