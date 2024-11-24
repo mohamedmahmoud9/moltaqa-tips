@@ -45,7 +45,8 @@ Every API response includes:
     "name": "John Doe",
     "email": "johndoe@example.com",
     "created_at": "2023-01-15T12:34:56Z"
-  }
+  },
+  "errors": {}
 }
 ```
 
@@ -60,7 +61,7 @@ Every API response includes:
     "user_id": 12345,
     "name": "John Doe",
     "email": "johndoe@example.com"
-  }
+  },
   "errors": {}
 }
 ```
@@ -114,6 +115,7 @@ Every API response includes:
   "status": 400,
   "message": "Invalid request parameters. Please check the input.",
   "errors": {}
+  "errors": {}
 }
 ```
 
@@ -124,7 +126,7 @@ Every API response includes:
 {
   "status": 401,
   "message": "Authentication failed. Please provide valid credentials."
-  "data": {}و
+  "data": {},
   "errors": {}
 }
 ```
@@ -136,7 +138,7 @@ Every API response includes:
 {
   "status": 403,
   "message": "You do not have permission to access this resource."
-  "data": {}و
+  "data": {},
   "errors": {}
 }
 ```
@@ -148,7 +150,7 @@ Every API response includes:
 {
   "status": 404,
   "message": "The requested resource was not found."
-  "data": {}و
+  "data": {},
   "errors": {}
 }
 ```
@@ -163,7 +165,7 @@ Every API response includes:
   "errors": {
     "email": "The email field is required.",
     "password": "The password must be at least 8 characters."
-  }
+  },
   "data": {}
 }
 ```
@@ -174,8 +176,8 @@ Every API response includes:
 ```json
 {
   "status": 500,
-  "message": "An unexpected error occurred. Please try again later."
-  "data": {}
+  "message": "An unexpected error occurred. Please try again later.",
+  "data": {},
   "errors": {}
 }
 ```
@@ -187,7 +189,8 @@ Every API response includes:
 {
   "status": 409,
   "message": "The request could not be completed due to a conflict. Resource already exists."
-  "data": {}
+  "data": {},
+  "errors": {}
 }
 ```
 
@@ -197,8 +200,9 @@ Every API response includes:
 ```json
 {
   "status": 503,
-  "message": "The server is currently unavailable. Please try again later."
-  "data": {}
+  "message": "The server is currently unavailable. Please try again later.",
+  "data": {},
+  "errors": {}
 }
 ```
 
