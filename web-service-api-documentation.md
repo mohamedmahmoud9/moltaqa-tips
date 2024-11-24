@@ -61,6 +61,7 @@ Every API response includes:
     "name": "John Doe",
     "email": "johndoe@example.com"
   }
+  "errors": {}
 }
 ```
 
@@ -101,6 +102,7 @@ Every API response includes:
       "previous_page": 1
     }
   }
+  "errors": {}
 }
 ```
 
@@ -111,10 +113,7 @@ Every API response includes:
 {
   "status": 400,
   "message": "Invalid request parameters. Please check the input.",
-  "error": {
-    "field": "email",
-    "description": "The email address format is invalid."
-  }
+  "errors": {}
 }
 ```
 
@@ -125,6 +124,8 @@ Every API response includes:
 {
   "status": 401,
   "message": "Authentication failed. Please provide valid credentials."
+  "data": {}و
+  "errors": {}
 }
 ```
 
@@ -135,6 +136,8 @@ Every API response includes:
 {
   "status": 403,
   "message": "You do not have permission to access this resource."
+  "data": {}و
+  "errors": {}
 }
 ```
 
@@ -145,6 +148,8 @@ Every API response includes:
 {
   "status": 404,
   "message": "The requested resource was not found."
+  "data": {}و
+  "errors": {}
 }
 ```
 
@@ -159,6 +164,7 @@ Every API response includes:
     "email": "The email field is required.",
     "password": "The password must be at least 8 characters."
   }
+  "data": {}
 }
 ```
 
@@ -169,6 +175,8 @@ Every API response includes:
 {
   "status": 500,
   "message": "An unexpected error occurred. Please try again later."
+  "data": {}
+  "errors": {}
 }
 ```
 
@@ -179,6 +187,7 @@ Every API response includes:
 {
   "status": 409,
   "message": "The request could not be completed due to a conflict. Resource already exists."
+  "data": {}
 }
 ```
 
@@ -189,6 +198,7 @@ Every API response includes:
 {
   "status": 503,
   "message": "The server is currently unavailable. Please try again later."
+  "data": {}
 }
 ```
 
